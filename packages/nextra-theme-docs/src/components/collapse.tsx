@@ -69,7 +69,7 @@ export function Collapse({
       style={{
         ...(initialOpen.current || horizontal ? undefined : { height: 0 }),
         transitionDuration: (isOpen ? openDuration : closeDuration) + 'ms',
-        whiteSpace: isOpen ? "initial" : "nowrap"
+        whiteSpace: horizontal ? (isOpen ? "initial" : "nowrap") : "initial",
       }}
     >
       <div>{children}</div>
