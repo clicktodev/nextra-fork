@@ -420,7 +420,7 @@ export function Sidebar({
           <OnFocusItemContext.Provider value={setFocused}>
             <div
               className={cn(
-                '_overflow-y-auto',
+                '_overflow-y-auto _overflow-x-hidden',
                 '_p-4 _grow md:_h-[calc(100vh-var(--nextra-navbar-height)-var(--nextra-menu-height))]',
                 showSidebar ? 'nextra-scrollbar' : 'no-scrollbar'
               )}
